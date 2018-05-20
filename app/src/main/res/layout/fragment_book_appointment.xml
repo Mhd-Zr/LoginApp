@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userinfotabs.BookAppointment"
+    android:id="@+id/user_info_bookApt">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableLayout
+            android:id="@+id/bookApt_tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/bookApt_titleView"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:text="Book an Appointment"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/bookApt_toTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16sp"
+                    android:layout_marginTop="24sp"
+                    android:text="To:"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/green"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="52dp"
+                    android:text="Separated by commas (if more than one)"
+                    android:textColor="@color/common_google_signin_btn_text_light"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="69dp" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/bookApt_to_email"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8sp"
+                android:layout_marginStart="54sp"
+                android:layout_marginTop="12sp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/bookApt_toTV"
+                app:layout_constraintTop_toBottomOf="@+id/bookApt_titleView" />
+
+            <TextView
+                android:id="@+id/bookApt_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="24sp"
+                android:text="Subject:"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bookApt_to_email" />
+
+            <EditText
+                android:id="@+id/bookApt_subjField"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8sp"
+                android:layout_marginStart="54sp"
+                android:layout_marginTop="12sp"
+                android:ems="10"
+                android:hint="Subject"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/bookApt_subject"
+                app:layout_constraintTop_toBottomOf="@+id/bookApt_to_email" />
+
+            <TextView
+                android:id="@+id/bookApt_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="24sp"
+                android:text="Location:"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bookApt_subjField" />
+
+            <EditText
+                android:id="@+id/bookApt_roomField"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8sp"
+                android:layout_marginStart="54sp"
+                android:layout_marginTop="12sp"
+                android:ems="10"
+                android:hint="Room"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/bookApt_room"
+                app:layout_constraintTop_toBottomOf="@+id/bookApt_subjField" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/bookApt_startTimeTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16sp"
+                    android:layout_marginTop="24sp"
+                    android:text="Start Time"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TimePicker
+                    android:id="@+id/bookApt_startTimePicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12sp"
+                    android:timePickerMode="spinner"></TimePicker>
+
+                <!--Horizontal Line-->
+                <View
+                    android:layout_width="200dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="6sp"
+                    android:background="#a40404" />
+
+                <!--Vertical Line
+                <View
+                    android:layout_width="7dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50sp"
+                    android:background="#a40404" />-->
+
+                <TextView
+                    android:id="@+id/bookApt_EndTimeTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12sp"
+                    android:layout_marginTop="24sp"
+                    android:text="End Time"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TimePicker
+                    android:id="@+id/bookApt_endTimePicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12sp"
+                    android:timePickerMode="spinner">
+
+                </TimePicker>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bookApt_saveBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:text="Save" />
+
+        </TableLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/bookApt_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <fragment
+            android:id="@+id/fragment"
+            android:name="com.example.mzreikat.firstpro.userinfotabs.AppointmentInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10sp" />
+
+    </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>
