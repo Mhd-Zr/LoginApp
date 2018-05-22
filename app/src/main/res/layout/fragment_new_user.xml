@@ -1,10 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".login.NewUserFragment">
 
+    <TextView
+        android:id="@+id/fragmentNewUser_titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32sp"
+        android:text="@string/fragmentNewUser_titleView"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:id="@+id/fragmentNewUser_scrollViewLoginForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="175sp">
+
+    <LinearLayout
+        android:id="@+id/fragmentNewUser_linearLayoutLoginForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/tranc_white_rectangle">
+
+    <TextView
+        android:id="@+id/fragmentNewUser_emailTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:text="@string/fragmentNewUser_emailView"
+        android:textAlignment="center"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/fragmentNewUser_emailField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        android:hint="@string/fragmentNewUser_emailHint"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/fragmentNewUser_passwordTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:text="@string/fragmentNewUser_passView"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/fragmentNewUser_passwordField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10sp"
+        android:hint="@string/fragmentNewUser_passHint"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/fragmentNewUser_confirmPassTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        android:text="@string/fragmentNewUser_confirmPassView"
+        android:textAlignment="center"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/fragmentNewUser_confirmPassField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/fragmentNewUser_confirmPassHint"
+        android:inputType="textPassword"
+        android:layout_marginTop="8sp"
+        android:maxLines="1"
+        android:singleLine="true"/>
+
+    <Button
+        android:id="@+id/fragmentNewUser_signUpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32sp"
+        android:text="@string/fragmentNewUser_signUpBtn"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+    </LinearLayout>
+</ScrollView>
 
 </RelativeLayout>

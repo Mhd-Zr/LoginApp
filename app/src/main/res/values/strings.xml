@@ -9,6 +9,7 @@
     <string name="error_invalid_email">This email address is invalid</string>
     <string name="error_invalid_password">This password is too short</string>
     <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_not_matched">This password not matching</string>
     <string name="error_field_required">This field is required</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
@@ -35,5 +36,15 @@
     <string name="scanShareFragment_textViewText">No Text</string>
     <string name="scanShareFragment_BtnText">Share Current Text</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--New User Fragment-->
+    <string name="fragmentNewUser_titleView">Create New Account</string>
+    <string name="fragmentNewUser_emailView">Enter your email</string>
+    <string name="fragmentNewUser_emailHint">email</string>
+    <string name="fragmentNewUser_passView">Enter a password</string>
+    <string name="fragmentNewUser_passHint">password</string>
+    <string name="fragmentNewUser_confirmPassView">Enter the password again</string>
+    <string name="fragmentNewUser_confirmPassHint">password again</string>
+    <string name="fragmentNewUser_signUpBtn">Sign Up</string>
 
 </resources>
